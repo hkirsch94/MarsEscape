@@ -27,7 +27,7 @@ public class UI_Manager : MonoBehaviour
         // activate white background for text
         //_whitebackground.GetComponent<Image>().enabled = true;
 
-        _statustext.text = "Game Over \n you collected " + points + " food items!";
+        _statustext.text = "Game Over \n you collected " + points + " food items! Press E to Continue!";
         PLS.enabled = true;
         if (points >= 10)
         {
@@ -46,7 +46,7 @@ public class UI_Manager : MonoBehaviour
     public bool win()
     {
         PLS.enabled = true;
-        _statustext.text = "You collected all 20 food items!";
+        _statustext.text = "You collected all 20 food items! Press E to Continue!";
         _statustext.color = Color.green;
 
         return true;
