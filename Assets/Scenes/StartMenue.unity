@@ -757,7 +757,7 @@ Transform:
   m_GameObject: {fileID: 534535855}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -1, y: 10, z: 1}
-  m_LocalScale: {x: 192, y: 108, z: 1}
+  m_LocalScale: {x: 230, y: 108, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2873,7 +2873,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9109287256720708979, guid: e91931bb24c70954b879b3a2a91bba58, type: 3}
       propertyPath: mouseSensitivity
-      value: 300
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 9109287256720708988, guid: e91931bb24c70954b879b3a2a91bba58, type: 3}
       propertyPath: m_Name
