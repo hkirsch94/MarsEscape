@@ -19,3 +19,32 @@ Even though we had a rough sketch from the beginning, the storyline in all it’
 During the gameplay, the player is shown a text field with all possible tasks. Depending on how many points have been achieved in each task (or in the case of the bush, whether it was destroyed), the respective text turns red, yellow or green. The mini-game at the food market is largely build after the Jumpignon game with a few changes. Most importantly, there are not only enemies falling from the sky which kill the player after 3 collisions, there is also food raining down on the player. The collected food is counted as points with 20 as the highest amount the player can achieve. The Game Over screen is coloured red for points below 10, yellow for everything else up to 19 and only the full 20 points turn the text in the mini-game as well as the text in the main game green. The most obvious difference is probably the design of the game. We used a different picture to set the theme for a mars scenery with assets of stones as the platforms on which the player can jump. Once the game is played, the player is teleported back into the main game.
 The main struggles we had during the implementation of the game were rather small but crucial things such as an input text or an inventory that memorises the objects that were picked up. As usual when trying to code something, we were often stuck at small problems which we resolved after a while of trying all kinds of things and looking for solutions online.
 
+# Blender Creations:
+- Alien.fbx
+- TubeDoor.fbx
+- Path.fbx
+- Door.fbx
+- Button.fbx
+- ExperimentalTube.fbx
+- Axe.fbx
+
+# Ideas/Struggles/Solutions Scripts:
+- ActivateAnim.cs
+- Bulle_Behaviour.cs
+- CameraMovement.cs
+- CameraMovement2D.cs
+- ChangeSceneButton.cs
+- Collectable.cs
+- DestroyObjectsWithItems.cs
+- DoorAnim.cs
+- Enemy_Script.cs
+- InitializePlayer.cs
+- InitializeEnd.cs
+- Player.cs
+- PlayerMovement.cs
+- QuitStart
+- RaycastPlayer.cs
+- SceneChange.cs
+- SpawnManager.cs
+- TaskValues.cs
+- UI_Manager.cs
