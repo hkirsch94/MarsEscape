@@ -12,14 +12,19 @@ public class DoorAnim : MonoBehaviour
 
     void Update()
     {
+        //The layer we want to get hit
         LayerMask mask = LayerMask.GetMask("InteractableObject");
         RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
+        // true if the layer got hit
         if (Physics.Raycast(rayCast.transform.position, rayCast.transform.forward, out hit, 2f, mask))
         {
+            //get the animator of the object we want to activate
             anim = hit.collider.GetComponent<Animator>();
+            //Resets the Active bool of the animator so we can use the door repeatedly
             anim.ResetTrigger("Active");
+            //biger canvas point if raycast hits the specified layer
             point.sizeDelta = new Vector2(6, 6);
+            //Start the animation by pressing E
             if (Input.GetKeyDown(KeyCode.E))
             {
                 

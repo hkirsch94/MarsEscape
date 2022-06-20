@@ -6,6 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class InitializeEnd : MonoBehaviour
 {
+    /*
+     * 
+     * The Script for the endings
+     * here we want to get the values of the
+     * different tasks and initilze the ending accordingly
+     * 
+     */
+
+
     private TaskValues value;
 
     private GameObject playerMain;
@@ -252,6 +261,7 @@ public class InitializeEnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //We want to change the scene after pressing E
         if (Input.GetKeyDown(KeyCode.E))
         {
 

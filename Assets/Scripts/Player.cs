@@ -87,6 +87,9 @@ public class Player : MonoBehaviour
             _nextFireTime = Time.time + FireCooldownTime;
 
         }
+
+        //Change back to the main Game, the player and save information according to the reached Points
+
         if (end && Input.GetKeyDown(KeyCode.E))
         {
             playerMain.GetComponent<ChangeSceneButton>().score = _points;

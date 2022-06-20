@@ -17,7 +17,11 @@ public class InitalizePlayer : MonoBehaviour
     [SerializeField]
     private string scene;
 
-    // Start is called before the first frame update
+    /*
+     * We want to initalize the Player Objects and spawnmanager
+     * the objects should not be destroyed after changing the scene
+     * we will activate the Player which we want to use in the next scene
+     */
     void Start()
     {
         GameObject.DontDestroyOnLoad(spawnManager);
@@ -32,6 +36,7 @@ public class InitalizePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Start the game by pressing P
         if (Input.GetKeyDown(KeyCode.P))
         {
 

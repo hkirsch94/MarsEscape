@@ -12,6 +12,7 @@ public class Scene_Change : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //change scene ofter player enters the object
         if (other.CompareTag("Player"))
         {
             RenderSettings.skybox = mat1;

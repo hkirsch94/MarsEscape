@@ -5,6 +5,13 @@ using UnityEngine;
 public class TaskValues : MonoBehaviour
 {
 
+    /*
+     * 
+     * Script to save the Values of the Tasks for better access and overview for the endings
+     * 
+     */
+
+
     public int food = 0;
     public bool data = false;
     public int supplies = 0;

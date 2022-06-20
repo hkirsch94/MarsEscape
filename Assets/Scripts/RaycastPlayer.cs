@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class RaycastPlayer : MonoBehaviour
 {
+    //Prototype of Raycasting
+    //obsolete because we use other scripts now
+
+
     public Transform rayCast;
     [SerializeField]
     public RectTransform point;
