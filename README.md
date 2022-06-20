@@ -41,11 +41,22 @@ The main struggles we had during the implementation of the game were rather smal
 ## CourseScripts/Minigame
 
 - Bulle_Behaviour.cs
+  - no changes, bullet speed initialised and bullets disappear above y=20  
 - CameraMovement2D.cs
+  - no changesm camera movement follows movement of player
 - UI_Manager.cs
+  - we included a point count for each collected item
+  - function gameOver() and win() with specified colour changes
+  - we had to use a mesh renderer responsible for the background picture which only gets activated / enabled if gameOver or win is used. It serves a higher readability for the gameOver/win text
 - Enemy_Script.cs
+  - no changes, speed and position of enemies initialised and destroy if collision with player or bullet
+- Food_Script.cs
+  - the same as enemy script, just for food items. Speed higher than enemies, also destroy if collision with player or bullet
 - Player.cs
+  - implementation of Points() function which counts up points when called and checks whether 20 points are reached and call win
+  - implementation of Damage() basically the same, calls gameOver instead of win
 - SpawnManager.cs
+  - if-condition in IEnumerator uses counter to only make 1 food item appear for each 2 emenies that appear, to make it harder for the player
 - SceneChange.cs
   - Used in Main to change scene for the endings 
 
