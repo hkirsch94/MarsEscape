@@ -35,7 +35,7 @@ The main struggles we had during the implementation of the game were rather smal
 - ExperimentalTube.fbx
   - Decoration for the laboratory
 - Axe.fbx
-  - An Axe which we want to collect to destroy th Bush
+  - An Axe which we want to collect to destroy the Bush
 
 # Ideas/Struggles/Solutions Scripts:
 ## CourseScripts/Minigame
