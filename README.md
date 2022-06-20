@@ -58,18 +58,32 @@ The main struggles we had during the implementation of the game were rather smal
   - Sprinting was realtively easy to implement per Button press. We just changed the speed, which was not good enough, because we wanted to be slower while crouching. This was resolved by adding the modificators in the movement calculation.
   - Ladders were also easy to impelemt, after doing the ground check, because we thought we can use this it in the same way. After some try and error we just had to combine both checks to be able to let go of the ladder.
   - On the other side we created the function for crouching...the worst of them all. We watched a few tutorial which we were not able to use on our script. So we had the idea to just scale the player down at the y-axis. This needed some adjustments because it created some problems with the groundcheck first. After doing that we tried the function on a tunnel. At this Point, if we let go of the ctrl button inside the Tunnel we clipped through the Ground and just were falling into infinity. After that we were first introduced to raycasting. There is a function which checks if there is enough space in a specified direction and after some adjustments our player was finished.
-  - 
+
 ### Raycasting Layers
 - RaycastPlayer.cs
+  - First Raycast Script for testing. We created a additional canvas Point for every script. We could have used one script for one canvas point whiich would be accessed from the other Raycasting scripts but we didn't want to destroy something while doing so. 
 - DoorAnim.cs
+  - The Script itself was wasy to implement but we had problems with the animation. We created the animation in unity first. The problem was additional doors were transformed to the location of the first door, so we created the animation in Blender. After activating the root transform in the animator it worked perfectly fine. We are using a bool in the animator which activates the animation which we had to reset directly after the animation starts. Oterwise the dor would be closing directly after opening.
 - ActivateAnim.cs
-- Collectable.cs
+  - The script which we wanted to use to activate everything. But activating a door by pressing a button was more complicated than we thought. After adding doors to a specific button the script was accessing all doors which were assigned to a button. We were able to solve this by accessing the doors different so we just were just accessing a specific door animation.
 - DestroyObjectsWithItems.cs
+  - We wanted to destroy a bush by using a item, after implementing the other raycasting scripts it was relatively easy. We assigned both items and activated a bool after collecting the item we want to use.
+- Collectable.cs
+  - Similar to the Script before. In this case we just destroy an object and increase an integer which represents the amount
+- ChangeSceneButton.cs
+  - A differnet Button Script which we used for a scene change to start our Minigame. We also are saving our reached points inside of it.   
+- EnterPassword
+  - This Script was a big workaround. We wanted to use the inputField first, but had problems to access it from our player. Our solution was to activate the InputField, add the number keys to a list and ad the numbers to the text in the field according to our input. The string inside is compared with some if-statements.
 
 ### Other
 - InitializePlayer.cs
-- InitializeEnd.cs
-- ChangeSceneButton.cs
+  - There are two reasons why we were initializing the players in the start screen and set it dontSestroy OnLoad. First, we wanted to save the progress of the player, which would have a reset if we just change the scene back to the MainGame which had the side effect oft not duplicating the player if initialized in the Main. Second, accessing the different cameras of the Player did not work well if one player was deleted. Somehow just deactivate and activating the GameObjects worked perfectly fine but it took a while finding a solution.
+  - We use key input to start the Game. This was a workaround because we were not able to access a canvas button that easy
 - TaskValues.cs
+  - A extra script to summarize the values of our tasks. Gave a better Overview of our ending by using the bool first and then the int values in the if-statements
+- InitializeEnd.cs
+  - Just the script were we are accessing all ending we have created as a texts using the values of the TaskValues.cs.
 - QuitStart.cs
+  - Just a Script for the Player to close the game at each point of the game. Does not work right know. We think it should work after building the Game 
+
 
