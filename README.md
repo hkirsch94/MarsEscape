@@ -5,7 +5,7 @@
 - Carmen Moßner, cmossner@uni-osnabrueck.de
 - Course: Introduction to Unity, SoSe 2022
 
-Note: All assets that include "download" in their name are downloaded from the store, all others are created by us.
+Note: All assets that include "download" in their name are downloaded from the asset store, all others are created by us.
 
 
 ## Welcome to Planet Mars!
