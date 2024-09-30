@@ -1,7 +1,7 @@
 # MarsEscape_Unity
 
 - Alina Griesel, agriesel@uni-osnabrueck.de
-- Fabian Kirsch, fkirsch@uni-osnabrueck.de
+- Hanna Kirsch, hkirsch94@outlook.de
 - Carmen Moßner, cmossner@uni-osnabrueck.de
 - Course: Introduction to Unity, SoSe 2022
 
